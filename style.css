@@ -1,0 +1,33 @@
+#container{
+	color: black;
+	
+
+}
+#first{
+	background-color: lightgray;
+}
+#nh{
+	font-size: 3vw;
+	font-family:  'Kavivanar', cursive;
+	color: black;
+	 }
+
+#second{
+	color: black ;
+}
+#third{
+	color: black ;
+}
+#hh{
+	color: black ;
+}
+#uu {
+
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+
+}
+img{
+	border-radius: 360px;
+}

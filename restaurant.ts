@@ -1,23 +1,18 @@
-var menu : Array<string>=['burger','wrapper','toast'];
-const [itemOne,itemTwo,itemThree] = menu;
+let menu : Array<string> =['kebab','salad', 'pizza'];
+const [itemOne,itemTwo,itemThree]=  menu;
 
-for(let i =0 ; i < menu.length ; i++){
-   var newdiv = document.createElement("p");
-   newdiv.appendChild(document.createTextNode(menu[i]));
-   document.body.appendChild(newdiv);
+
+
+let price : Array<number> = [3.5,2.5,10];
+const [priceOne,priceTwo,priceThree]= price;
+for(let i=0; i< menu.length; i++){
+	document.getElementById("cont").innerHTML += menu[i]+"<br>"+ price[i]+"<br>"  ;
 }
-
-
 
 function newItem(): void{
-   let new_item = (<HTMLInputElement>document.getElementById('new-item')).value;
-   var newdiv = document.createElement("p");
+    let new_item = (<HTMLInputElement>document.getElementById('new-item')).value;
+    var newdiv = document.createElement("p");
    newdiv.appendChild(document.createTextNode(new_item));
    document.body.appendChild(newdiv);
-}
 
-function promotion(item: string,price: number): any {
-   return "Don't miss our promotion of "+item + " for just "+price+" Euro"; 
 }
-document.getElementById('target').innerHTML=promotion(itemThree,1);
-
